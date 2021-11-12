@@ -1,0 +1,17 @@
+{{!-- 2. Creamos el formulario y lo prerellenamos con los datos del libro, sin olvidar el id --}}
+
+<form action="/editar-libro/{{id}}" method="POST">
+  <label for="">Title:</label>
+  <input value="{{title}}" type="text" name="title">
+
+  <label for="">Author:</label>
+  <input value="{{author}}" type="text" name="author">
+
+  <label for="">Description:</label>
+  <input value="{{description}}" type="text" name="description">
+
+  <label for="">Rate:</label>
+  <input value="{{rating}}" type="number" name="rating">
+
+  <button type="submit">EDIT</button>
+</form>

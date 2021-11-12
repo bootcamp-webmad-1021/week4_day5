@@ -1,0 +1,13 @@
+<h1>Detalles del libro</h1>
+
+<h2>{{title}}</h2>
+{{#each author}}
+  <p>{{name}} {{lastName}}</p>
+{{/each}}
+</br>
+<h3>Resumen</h3>
+<p>{{description}}</p>
+<p>Valoración: {{rating}}</p>
+{{!-- Creamos un enlace con el id del libro para ir al form de edición --}}
+<a href="/editar-libro/{{id}}">Editar libro</a>
+<a href="/nueva-review/{{id}}">Deja una review</a>
