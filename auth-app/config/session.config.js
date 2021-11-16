@@ -1,12 +1,10 @@
 //1.Session.  Crear archivo session.config e instalar express-session y connect-mongo
 
 
-const session = require('express-session');         // instalar     
-const MongoStore = require('connect-mongo');        // instalar
+const session = require('express-session');    
+const MongoStore = require('connect-mongo');   
 const mongoose = require('mongoose');
 
-//2.Configurar en el .env el SESS_SECRET y el MONGODB_URI
-//3.En app.js requerir este archivo
 module.exports = app => {
   app.set('trust proxy', 1);
   app.use(
